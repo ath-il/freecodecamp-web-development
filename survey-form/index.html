@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This a survey form</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:</label>
+      <input id="name"  type="text" placeholder="jon snow" required>
+      <label for="email" id="email-label">Email:</label>
+      <input id="email" type="email" placeholder="abc@gmail.com" required>
+       <label id="number-label" for="number">Age:</label>
+      <input id="number" min="0" max="200" placeholder="10" type="number">what is current role</label>
+      <label for="dropdown">
+      <select id="dropdown" >
+        <option value="student">Student</option>
+        <option value="employee">Employee</option>
+      </select><br>
+      <label>Are you a freecodecamper?
+        <input type="radio" for="check1" name="checking" value="no">
+        <label for="check1">Yes</label>
+        <input type="radio" for="check2" name="checking" value="no">
+        <label for="check2">No</label><br>
+      </label>
+       <label>What are the technologies you Know?<br>
+         <input type="checkbox" value="c" id="C">
+         <label for="C">C</label>
+         <input type="checkbox" value="java" id="J">
+         <label for="J">Java</label>
+         <input type="checkbox" value="python" id="Python">
+         <label for="Python">Python</label>
+         <input type="checkbox" value="HTMl" id="html">
+         <label for="html">HTML</label>
+         <input type="checkbox" value="Javascript" id="js">
+         <label for="js">JavaScript</label>
+      </label>
+      <label for="textarea">Any comments:</label>
+      <textarea id="textarea"></textarea>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
